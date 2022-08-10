@@ -1,4 +1,4 @@
-# Perceptual Locomotion with Controllable Pace and Natural Gait Transitions Over Uneven Terrain
+# CPG-Guided Locomotion
 
 Codebase supporting CPG-guided locomotion project. 
 
