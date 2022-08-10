@@ -10,11 +10,11 @@ This custom image installs:
 Build command:
 
 	docker build -t dgx-cpg-locomotion:latest \
-		-f docker/Dockerfile-sbl3 . 
+		-f docker/Dockerfile . 
 
 Note: 
 
-* Build from rl-baseline3-zoo dir so that docker can copy this package into the image.
+* Build from cpg-locomotion dir so that docker can copy this package into the image.
 
 ## Make docker container 
 
