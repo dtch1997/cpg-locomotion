@@ -35,6 +35,8 @@ Run,
 
     ./docker/run.sh cpg-locomotion
 
+Afterwards, cd to ```/root/cpg-locomotion```. You can now run ```train.py``` according to the instructions in top-level README.md
+
 ## Test GUI
 
 Run in container,
