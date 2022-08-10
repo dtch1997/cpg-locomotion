@@ -1,0 +1,13 @@
+pybullet
+gym
+stable-baselines3
+torch
+torchvision
+numpy
+seaborn
+pyyaml
+sb3-contrib
+optuna
+absl-py
+numba
+ray[rllib]
