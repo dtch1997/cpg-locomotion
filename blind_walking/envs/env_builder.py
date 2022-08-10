@@ -78,17 +78,17 @@ def build_regular_env(
             ),
             sensor_wrappers.HistoricSensorWrapper(robot_sensors.MotorAngleSensor(num_motors=a1.NUM_MOTORS), num_history=3),
             cpg_sensors.ReferenceGaitSensor(
-                gait_names=["trot"] if gait_name is None else [gait_name],
-                gait_frequency_upper=2.0 if gait_frequency is None else gait_frequency,
-                gait_frequency_lower=2.0 if gait_frequency is None else gait_frequency,
+                gait_names=["walk", "trot"] if gait_name is None else [gait_name],
+                gait_frequency_upper=2.5 if gait_frequency is None else gait_frequency,
+                gait_frequency_lower=1.5 if gait_frequency is None else gait_frequency,
                 duty_factor_upper=0.75 if duty_factor is None else duty_factor,
-                duty_factor_lower=0.75 if duty_factor is None else duty_factor,
+                duty_factor_lower=0.5 if duty_factor is None else duty_factor,
                 obs_steps_ahead=[0, 1, 2, 10, 50],
             ),
         ]
     if env_sensor_list is None:
         env_sensor_list = [
-            environment_sensors.ForwardTargetPositionSensor(min_range=0.015, max_range=0.015),
+            environment_sensors.ForwardTargetPositionSensor(min_range=0.01, max_range=0.02),
         ]
 
     if env_randomizer_list is None:
