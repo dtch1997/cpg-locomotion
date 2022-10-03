@@ -115,4 +115,4 @@ This codebase draws inspiration from the following codebases:
 
 ## Contact
 
-For any questions regarding the ideas, implementation, or code, feel free to contact Daniel Tan at dtch009@gmail.com
+For any questions regarding the ideas, implementation, or code, feel free to log a Github issue
